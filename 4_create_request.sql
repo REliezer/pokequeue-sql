@@ -16,5 +16,3 @@ INSERT INTO pokequeue.requests(
 )
 
 SELECT max(id) AS id FROM pokequeue.requests;
-
-EXEC pokequeue.create_poke_request 'fire'
