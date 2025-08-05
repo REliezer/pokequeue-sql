@@ -15,3 +15,6 @@ CREATE TABLE pokequeue.[requests](
     updated DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (id_status) REFERENCES pokequeue.[status](id)
 )
+
+ALTER TABLE pokequeue.requests
+    ADD sample_size INT NULL
